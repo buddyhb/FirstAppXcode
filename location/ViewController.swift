@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
+    
+    
+    @IBOutlet weak var mapview: MKMapView!
+    @IBAction func mycurrentlocation(sender: AnyObject) {
+        var manager = CLLocationManager()
+        var placemark = CLPlacemark()
+        var geocoder = CLGeocoder()
+        
+        [manager.desiredAccuracy = kCLLocationAccuracyBest]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +34,12 @@ class ViewController: UIViewController {
     }
 
 
-}
+    @IBAction func TapHandle(sender: AnyObject) {
+    }
+    
+    @IBAction func RotateHandle(sender: AnyObject) {
+    }
+    @IBAction func LongPress(sender: AnyObject) {
+    }
+  }
 

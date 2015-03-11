@@ -13,6 +13,8 @@
 		DBA8CF491A35ACC40081C4DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA8CF481A35ACC40081C4DF /* Images.xcassets */; };
 		DBA8CF4C1A35ACC40081C4DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA8CF4A1A35ACC40081C4DF /* LaunchScreen.xib */; };
 		DBA8CF581A35ACC40081C4DF /* locationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8CF571A35ACC40081C4DF /* locationTests.swift */; };
+		DBA8CF621A35ACED0081C4DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA8CF611A35ACED0081C4DF /* MapKit.framework */; };
+		DBA8CF641A35B25D0081C4DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA8CF631A35B25D0081C4DF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		DBA8CF511A35ACC40081C4DF /* locationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA8CF561A35ACC40081C4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA8CF571A35ACC40081C4DF /* locationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationTests.swift; sourceTree = "<group>"; };
+		DBA8CF611A35ACED0081C4DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBA8CF631A35B25D0081C4DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA8CF641A35B25D0081C4DF /* CoreLocation.framework in Frameworks */,
+				DBA8CF621A35ACED0081C4DF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		DBA8CF331A35ACC40081C4DF = {
 			isa = PBXGroup;
 			children = (
+				DBA8CF631A35B25D0081C4DF /* CoreLocation.framework */,
+				DBA8CF611A35ACED0081C4DF /* MapKit.framework */,
 				DBA8CF3E1A35ACC40081C4DF /* location */,
 				DBA8CF541A35ACC40081C4DF /* locationTests */,
 				DBA8CF3D1A35ACC40081C4DF /* Products */,
@@ -405,6 +413,7 @@
 				DBA8CF5D1A35ACC40081C4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA8CF5E1A35ACC40081C4DF /* Build configuration list for PBXNativeTarget "locationTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				DBA8CF601A35ACC40081C4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
